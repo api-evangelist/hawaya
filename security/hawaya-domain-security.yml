@@ -1,0 +1,15 @@
+generated: '2026-07-19'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: www.hawaya.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Oct  4 19:20:44 2026 GMT
+  hsts: false
+domains:
+- domain: hawaya.com
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: false

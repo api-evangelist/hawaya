@@ -1,7 +1,24 @@
 aid: hawaya
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/hawaya.png
 name: Hawaya
-description: Hawaya is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Hawaya is a Muslim-focused online dating and matrimonial app that began as Harmonica, an Egyptian
+  matchmaking startup backed by 500 Startups (500 Global), and was later acquired by Match Group and rebranded
+  as Hawaya. The service emphasized serious, marriage-minded connections with privacy controls tailored to Muslim
+  singles across the Middle East, North Africa, and international diaspora markets, offered as consumer iOS and
+  Android mobile apps rather than a developer platform. Hawaya was discontinued in 2023 and no longer accepts new
+  registrations; it exposes no public API, SDK, or developer program. This API Evangelist profile is retained as
+  a company record with identity and legal links captured from the provider's own site.
 url: https://raw.githubusercontent.com/api-evangelist/hawaya/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +26,19 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: discontinued
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Dating
+- Matchmaking
+- Muslim
+- Consumer App
+- Mobile App
+- Match Group
+- Discontinued
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +46,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/hawaya-domain-security.yml
 - type: Website
-  url: https://harmonica.life
+  url: https://www.hawaya.com
+- type: PrivacyPolicy
+  url: https://www.hawaya.com/privacy.php
+- type: TermsOfService
+  url: https://www.hawaya.com/terms.php
+- type: Support
+  url: https://www.hawaya.com/faq.php
+- type: CookiePolicy
+  url: https://www.hawaya.com/cookie.php
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
